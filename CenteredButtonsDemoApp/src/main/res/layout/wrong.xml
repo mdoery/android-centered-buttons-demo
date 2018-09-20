@@ -5,14 +5,14 @@
     android:layout_height="fill_parent"
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    tools:context="com.mdoery.centeredbuttonsdemo.CenteredButtonDemoActivity"
+    tools:context="com.mdoery.centeredbuttonsdemo.CenteredButtonWrongActivity"
     tools:showIn="@layout/activity_centered_button_demo"
     xmlns:tools="http://schemas.android.com/tools">
     <Button
         android:id="@+id/switchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button"/>
+        android:text="@string/btn_switch_to_right"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,27 +21,27 @@
         tools:layout_editor_absoluteX="8dp">
         <RadioButton
             android:id="@+id/lightestBtn"
-            style="@style/LightestFlowerRadioButton"
+            style="@style/LightestFlowerCroppedRadioButton"
             android:layout_width="118dp"
-            android:layout_height="150dp">
+            android:layout_height="132dp">
         </RadioButton>
         <RadioButton
             android:id="@+id/lightBtn"
-            style="@style/LightFlowerRadioButton"
+            style="@style/LightFlowerCroppedRadioButton"
             android:layout_width="118dp"
-            android:layout_height="150dp">
+            android:layout_height="118dp">
         </RadioButton>
         <RadioButton
             android:id="@+id/darkBtn"
-            style="@style/DarkFlowerRadioButton"
+            style="@style/DarkFlowerCroppedRadioButton"
             android:layout_width="118dp"
-            android:layout_height="150dp">
+            android:layout_height="118dp">
         </RadioButton>
         <RadioButton
             android:id="@+id/darkestBtn"
-            style="@style/DarkestFlowerRadioButton"
+            style="@style/DarkestFlowerCroppedRadioButton"
             android:layout_width="118dp"
-            android:layout_height="150dp">
+            android:layout_height="132dp">
         </RadioButton>
     </LinearLayout>
 </LinearLayout>

@@ -33,4 +33,22 @@
         <item name="android:button">@drawable/nothing1x1</item>
         <item name="android:background">@drawable/dark_flower</item>
     </style>
+
+    <style name="LightestFlowerCroppedRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/nothing1x1</item>
+        <item name="android:background">@drawable/lightest_flower_cropped</item>
+    </style>
+    <style name="LightFlowerCroppedRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/nothing1x1</item>
+        <item name="android:background">@drawable/light_flower_cropped</item>
+    </style>
+    <style name="DarkestFlowerCroppedRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/nothing1x1</item>
+        <item name="android:background">@drawable/darkest_flower_cropped</item>
+    </style>
+    <style name="DarkFlowerCroppedRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/nothing1x1</item>
+        <item name="android:background">@drawable/dark_flower_cropped</item>
+    </style>
+
 </resources>

@@ -12,7 +12,7 @@
         android:id="@+id/switchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button"/>
+        android:text="@string/btn_switch_to_wrong"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,27 +21,27 @@
         tools:layout_editor_absoluteX="8dp">
         <RadioButton
             android:id="@+id/lightestBtn"
-            style="@style/LightestFlowerCroppedRadioButton"
+            style="@style/LightestFlowerRadioButton"
             android:layout_width="118dp"
-            android:layout_height="132dp">
+            android:layout_height="150dp">
         </RadioButton>
         <RadioButton
             android:id="@+id/lightBtn"
-            style="@style/LightFlowerCroppedRadioButton"
+            style="@style/LightFlowerRadioButton"
             android:layout_width="118dp"
-            android:layout_height="118dp">
+            android:layout_height="150dp">
         </RadioButton>
         <RadioButton
             android:id="@+id/darkBtn"
-            style="@style/DarkFlowerCroppedRadioButton"
+            style="@style/DarkFlowerRadioButton"
             android:layout_width="118dp"
-            android:layout_height="118dp">
+            android:layout_height="150dp">
         </RadioButton>
         <RadioButton
             android:id="@+id/darkestBtn"
-            style="@style/DarkestFlowerCroppedRadioButton"
+            style="@style/DarkestFlowerRadioButton"
             android:layout_width="118dp"
-            android:layout_height="132dp">
+            android:layout_height="150dp">
         </RadioButton>
     </LinearLayout>
 </LinearLayout>
