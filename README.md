@@ -19,3 +19,6 @@ Again the buttons are outlined below. You can see they have the same height. The
 
 ![buttons are centered](https://raw.githubusercontent.com/mdoery/android-centered-buttons-demo/master/right-buttons-centered.png)
 
+You can [read about this project at my blog](http://mdoery.com/blog/2018/09/20/centered-radio-buttons-android/), too.
+
+Thanks to [inky2010](https://openclipart.org/user-cliparts/inky2010?page=7) for making the flower images available in the public domain!
