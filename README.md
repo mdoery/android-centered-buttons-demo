@@ -21,4 +21,22 @@ Again the buttons are outlined below. You can see they have the same height. The
 
 You can [read about this project at my blog](http://mdoery.com/blog/2018/09/20/centered-radio-buttons-android/), too.
 
+### new! constraint view ###
+
+It's often the case that there is more than one way to do something in Android.
+
+It turns out that you can also solve the problem of misaligned buttons by using [Android's ConstraintLayout](https://developer.android.com/training/constraint-layout/). In this case, the buttons did not have to be updated in anyway. Instead, the layout handles this. However, it's a trickier layout, which is a drawback. It takes longer to set up correctly, and it may be more of a maintenance headache.
+
+The code to produce this type of layout has been incorporated into the demo app, as well.
+
+### screenshots ###
+
+I took screenshots from the app on a Samsung Galaxy S7 device, so that they can be easily compared.
+
+![buttons are centered](https://raw.githubusercontent.com/mdoery/android-centered-buttons-demo/master/right-layout-screenshot.jpg)
+
+![buttons are wrong](https://raw.githubusercontent.com/mdoery/android-centered-buttons-demo/master/wrong-layout-screenshot.jpg)
+
+![buttons are centered using ConstraintLayout](https://raw.githubusercontent.com/mdoery/android-centered-buttons-demo/master/constraint-layout-screenshot.jpg)
+
 Thanks to [inky2010](https://openclipart.org/user-cliparts/inky2010?page=7) for making the flower images available in the public domain!
