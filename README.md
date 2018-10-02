@@ -31,7 +31,7 @@ The code to produce this type of layout has been incorporated into the demo app,
 
 ### screenshots ###
 
-I took screenshots from the app on a Samsung Galaxy S7 device, so that they can be easily compared.
+I took screenshots from the app on a Samsung Galaxy S7 device, so that they can be easily compared. I touched up the screenshots by drawing a thing white rectangle around the row of buttons, making it easier to see the misalignment.
 
 Here, the buttons are misaligned. This shows the problem that we are trying to correct:
 ![buttons are wrong](https://raw.githubusercontent.com/mdoery/android-centered-buttons-demo/master/wrong-layout-screenshot.jpg)
