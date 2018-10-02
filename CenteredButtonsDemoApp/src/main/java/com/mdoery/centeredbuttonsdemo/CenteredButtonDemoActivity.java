@@ -1,12 +1,10 @@
 package com.mdoery.centeredbuttonsdemo;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -17,44 +15,37 @@ public class CenteredButtonDemoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_centered_button_demo);
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        Button btn =(Button) findViewById(R.id.switchBtn);
-        btn.setOnClickListener(new View.OnClickListener() {
+        Button btnConstraint =(Button) findViewById(R.id.btnConstraint);
+        btnConstraint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                swapLayout();
+                swapLayout(CenteredButtonDemoActivity.this, R.id.btnConstraint);
+            }
+        });
+
+        Button btnWrong = (Button) findViewById(R.id.btnWrong);
+        btnWrong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                swapLayout(CenteredButtonDemoActivity.this, R.id.btnWrong);
             }
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_centered_button_demo, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    protected void swapLayout(Activity a, int id) {
+        Intent intent = null;
+        switch (id) {
+            case R.id.btnConstraint:
+                intent = new Intent(a, CenteredButtonConstraintActivity.class);
+                break;
+            case R.id.btnWrong:
+                intent = new Intent(a, CenteredButtonWrongActivity.class);
+                break;
+            case R.id.btnRight:
+                intent = new Intent(a, CenteredButtonDemoActivity.class);
+                break;
         }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    public void swapLayout() {
-        Intent intent = new Intent(CenteredButtonDemoActivity.this, CenteredButtonWrongActivity.class);
-        CenteredButtonDemoActivity.this.startActivity(intent);
+        a.startActivity(intent);
     }
 
 }

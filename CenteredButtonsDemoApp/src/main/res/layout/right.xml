@@ -14,10 +14,10 @@
         android:orientation="horizontal"
         android:gravity="center_horizontal">
     <Button
-        android:id="@+id/btnRight"
+        android:id="@+id/btnConstraint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_switch_to_shim" />
+        android:text="@string/btn_switch_to_constraint" />
     <Button
         android:id="@+id/btnWrong"
         android:layout_width="wrap_content"

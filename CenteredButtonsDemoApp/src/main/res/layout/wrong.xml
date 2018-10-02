@@ -18,10 +18,10 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_switch_to_right"/>
     <Button
-        android:id="@+id/btnShim"
+        android:id="@+id/btnConstraint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_switch_to_shim"/>
+        android:text="@string/btn_switch_to_constraint"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"

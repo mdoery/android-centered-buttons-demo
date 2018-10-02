@@ -11,27 +11,27 @@ import android.widget.Button;
  * Created by mdoery on 9/20/18.
  */
 
-public class CenteredButtonWrongActivity extends AppCompatActivity {
-    private static final String TAG = CenteredButtonDemoActivity.class.getSimpleName();
+public class CenteredButtonWrongActivity extends CenteredButtonDemoActivity {
+    private static final String TAG = CenteredButtonWrongActivity.class.getSimpleName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_centered_button_demo_wrong);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        Button btn =(Button) findViewById(R.id.switchBtn);
-        btn.setOnClickListener(new View.OnClickListener() {
+        Button btnConstraint = (Button) findViewById(R.id.btnConstraint);
+        btnConstraint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                swapLayout();
+                swapLayout(CenteredButtonWrongActivity.this, R.id.btnConstraint);
             }
         });
-    }
 
-    public void swapLayout() {
-        Intent intent = new Intent(CenteredButtonWrongActivity.this, CenteredButtonDemoActivity.class);
-        CenteredButtonWrongActivity.this.startActivity(intent);
+        Button btnRight = (Button) findViewById(R.id.btnRight);
+        btnRight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                swapLayout(CenteredButtonWrongActivity.this, R.id.btnRight);
+            }
+        });
     }
 }
