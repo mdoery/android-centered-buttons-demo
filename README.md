@@ -33,10 +33,13 @@ The code to produce this type of layout has been incorporated into the demo app,
 
 I took screenshots from the app on a Samsung Galaxy S7 device, so that they can be easily compared.
 
-![buttons are centered](https://raw.githubusercontent.com/mdoery/android-centered-buttons-demo/master/right-layout-screenshot.jpg)
-
+Here, the buttons are misaligned. This shows the problem that we are trying to correct:
 ![buttons are wrong](https://raw.githubusercontent.com/mdoery/android-centered-buttons-demo/master/wrong-layout-screenshot.jpg)
 
+Here, the buttons are centered correctly by adding padding to some of the buttons:
+![buttons are centered](https://raw.githubusercontent.com/mdoery/android-centered-buttons-demo/master/right-layout-screenshot.jpg)
+
+In this screenshot, the buttons are centered correctly by using a ``ConstraintLayout``:
 ![buttons are centered using ConstraintLayout](https://raw.githubusercontent.com/mdoery/android-centered-buttons-demo/master/constraint-layout-screenshot.jpg)
 
 Thanks to [inky2010](https://openclipart.org/user-cliparts/inky2010?page=7) for making the flower images available in the public domain!
