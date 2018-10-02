@@ -8,11 +8,22 @@
     tools:context="com.mdoery.centeredbuttonsdemo.CenteredButtonDemoActivity"
     tools:showIn="@layout/activity_centered_button_demo"
     xmlns:tools="http://schemas.android.com/tools">
-    <Button
-        android:id="@+id/switchBtn"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_switch_to_wrong"/>
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_switch_to_shim" />
+    <Button
+        android:id="@+id/btnWrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_switch_to_wrong" />
+    </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

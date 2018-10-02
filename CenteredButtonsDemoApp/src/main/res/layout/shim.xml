@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.mdoery.centeredbuttonsdemo.CenteredButtonShimActivity"
+    tools:showIn="@layout/activity_centered_button_demo_shim"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+    <Button
+        android:id="@+id/btnWrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_switch_to_wrong"
+        tools:layout_editor_absoluteY="29dp"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineh"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_switch_to_right"
+        tools:layout_editor_absoluteY="29dp"
+        android:layout_marginLeft="11dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineh"
+        app:layout_constraintBottom_toTopOf="@+id/guideline" />
+    <RadioButton
+        android:id="@+id/lightestBtn"
+        style="@style/LightestFlowerCroppedRadioButton"
+        android:layout_width="118dp"
+        android:layout_height="132dp"
+        app:layout_constraintRight_toLeftOf="@+id/lightBtn"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:layout_marginRight="8dp">
+    </RadioButton>
+    <RadioButton
+        android:id="@+id/lightBtn"
+        style="@style/LightFlowerCroppedRadioButton"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lightestBtn"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineh"
+        android:layout_marginRight="8dp">
+    </RadioButton>
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineh"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintGuide_percent="0.5" />
+    <RadioButton
+        android:id="@+id/darkBtn"
+        style="@style/DarkFlowerCroppedRadioButton"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lightestBtn"
+        app:layout_constraintLeft_toRightOf="@+id/guidelineh">
+    </RadioButton>
+    <RadioButton
+        android:id="@+id/darkestBtn"
+        style="@style/DarkestFlowerCroppedRadioButton"
+        android:layout_width="118dp"
+        android:layout_height="132dp"
+        app:layout_constraintTop_toTopOf="@+id/lightBtn"
+        app:layout_constraintLeft_toRightOf="@+id/darkBtn"
+        android:layout_marginLeft="8dp">
+    </RadioButton>
+</android.support.constraint.ConstraintLayout>

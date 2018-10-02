@@ -6,13 +6,23 @@
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:context="com.mdoery.centeredbuttonsdemo.CenteredButtonWrongActivity"
-    tools:showIn="@layout/activity_centered_button_demo"
+    tools:showIn="@layout/activity_centered_button_demo_wrong"
     xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
     <Button
-        android:id="@+id/switchBtn"
+        android:id="@+id/btnRight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_switch_to_right"/>
+    <Button
+        android:id="@+id/btnShim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_switch_to_shim"/>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

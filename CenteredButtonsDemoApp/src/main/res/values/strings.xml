@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">CenteredButtonsDemo</string>
     <string name="action_settings">Settings</string>
-    <string name="btn_switch_to_wrong">Click to Switch to Wrong View</string>
-    <string name="btn_switch_to_right">Click to Switch to Right View</string>
+    <string name="btn_switch_to_wrong">Wrong</string>
+    <string name="btn_switch_to_right">Slices</string>
+    <string name="btn_switch_to_shim">Shims</string>
 </resources>
